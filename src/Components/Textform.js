@@ -56,7 +56,7 @@ const Textform = (props) => {
         <button disabled={text.length===0} className="btn btn-primary mt-1 mx-1" onClick={handleExtraSpaces}> Remove Extra Spaces </button>
       </div>
       <div className="container" style={{color : props.mode === 'dark'?'white': '#042743 '}}>
-        <h2>Youe Text Summary</h2>
+        <h2>Your Text Summary</h2>
         <p>{text.split(/\s+/).filter((element)=>{return element.length !== 0}).length} words and {text.length} charaters</p>
         <p>{0.008 * text.split(" ").filter((element)=>{return element.length !== 0}).length} Minutes read</p>
         <h2>Preview</h2> 
